@@ -1,6 +1,6 @@
 {
   "name": "RNFelicaExample",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -11,7 +11,7 @@
     "native-base": "^2.3.7",
     "react": "16.2.0",
     "react-native": "0.52.2",
-    "react-native-felica": "^0.0.1"
+    "react-native-felica": "^0.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
