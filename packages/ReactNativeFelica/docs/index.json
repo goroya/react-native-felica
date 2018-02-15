@@ -1,0 +1,1481 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "js/.external-ecmascript.js",
+    "static": true,
+    "longname": "js/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "js/FelicaCmd.js",
+    "content": "/**\n * Felica Command List\n * @type {Object}\n */\nconst FELICA_COMMAND = {\n  CC_POLLING: 0x00,\n  RC_POLLING: 0x01,\n  CC_REQUEST_SERVICE: 0x02,\n  RC_REQUEST_SERVICE: 0x03,\n  CC_REQUEST_RESPONCE: 0x04,\n  RC_REQUEST_RESPONCE: 0x05,\n  CC_READ_WITHOUT_ENCRYPTION: 0x06,\n  RC_READ_WITHOUT_ENCRYPTION: 0x07,\n  CC_WRITE_WITHOUT_ENCRYPTION: 0x08,\n  RC_WRITE_WITHOUT_ENCRYPTION: 0x09,\n  CC_SEARCH_SERVICE_CODE: 0x0A,\n  RC_SEARCH_SERVICE_CODE: 0x0B,\n  CC_REQUEST_SYSTEM_CODE: 0x0C,\n  RC_REQUEST_SYSTEM_CODE: 0x0D,\n  CC_AUTHENTICATION1: 0x10,\n  RC_AUTHENTICATION1: 0x11,\n  CC_AUTHENTICATION2: 0x12,\n  RC_AUTHENTICATION2: 0x13,\n  CC_READ: 0x14,\n  RC_READ: 0x15,\n  CC_Write: 0x16,\n  RC_Write: 0x17,\n  CC_REQUEST_SERVICE_V2: 0x32,\n  RC_REQUEST_SERVICE_V2: 0x33,\n  CC_GET_SYSTEM_STATUS: 0x38,\n  RC_GET_SYSTEM_STATUS: 0x39,\n  CC_REQUEST_SPECIFICATION_VERSION: 0x3C,\n  RC_REQUEST_SPECIFICATION_VERSION: 0x3C,\n  CC_RESET_MODE: 0x3E,\n  RC_RESET_MODE: 0x3E,\n  CC_AUTHENTICATION1V2: 0x40,\n  RC_AUTHENTICATION1V2: 0x41,\n  CC_AUTHENTICATION2V2: 0x42,\n  RC_AUTHENTICATION2V2: 0x43,\n  CC_ReadV2: 0x44,\n  RC_ReadV2: 0x45,\n  CC_WriteV2: 0x46,\n  RC_WriteV2: 0x47,\n  CC_UPDATE_RANDOM_ID: 0x4C,\n  RC_UPDATE_RANDOM_ID: 0x4C\n};\n\nexport default FELICA_COMMAND;\nmodule.exports = FELICA_COMMAND;\n",
+    "static": true,
+    "longname": "C:/Users/goroy/RubymineProjects/react-native-felica/packages/ReactNativeFelica/js/FelicaCmd.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "FELICA_COMMAND",
+    "memberof": "js/FelicaCmd.js",
+    "static": true,
+    "longname": "js/FelicaCmd.js~FELICA_COMMAND",
+    "access": "public",
+    "export": true,
+    "importPath": "react-native-felica/js/FelicaCmd.js",
+    "importStyle": "FELICA_COMMAND",
+    "description": "Felica Command List",
+    "lineNumber": 5,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "js/JsRNFelica.js",
+    "content": "import { NativeModules, DeviceEventEmitter } from 'react-native';\nimport { EventEmitter2 } from 'eventemitter2';\nimport FELICA_COMMAND from './JsRNFelica'\nimport Util from \"./Util\";\n\nconst { RNFelica } = NativeModules;\n\n/**\n * Convert idm for argument to byte array\n * @param {(Array.<Number> | String)} idm\n * @returns {Array.<Number>}\n */\nfunction argIdm2ByteIdm(idm){\n  let byteIdm = null;\n  if(Array.isArray(idm)){\n    byteIdm = idm\n  }else if (typeof idm === 'string' || idm instanceof String){\n    byteIdm = Util.stringHex2Byte(idm)\n  }else{\n    return null\n  }\n  return byteIdm;\n}\nclass JsRNFelica extends EventEmitter2 {\n  /**\n   *  Constructor for JsRNFelica\n   */\n  constructor() {\n    super();\n    DeviceEventEmitter.addListener(RNFelica.EVENT.FELICA_EVENT, (felicaInfo) => {\n      this.emit('JS_EVENT_FELICA', felicaInfo);\n    });\n  }\n\n  /**\n   *\n   * @returns {*}\n   */\n  static haveNfc() {\n    return RNFelica.haveNfc();\n  }\n\n  /**\n   *\n   * @returns {*}\n   */\n  static enableNfc() {\n    return RNFelica.enableNfc();\n  }\n\n  /**\n   *\n   */\n  static connect() {\n    return RNFelica.connect();\n  }\n\n  /**\n   *\n   */\n  static close() {\n    return RNFelica.close();\n  }\n\n  /**\n   *\n   * @param data\n   * @returns {*}\n   */\n  static transceive(data) {\n    return RNFelica.transceive();\n  }\n\n  /**\n   *\n   * @param data\n   * @returns {*}\n   */\n  static transceiveString(data) {\n    return RNFelica.transceiveString(data);\n  }\n\n  /**\n   *\n   * @param data\n   * @returns {*}\n   */\n  static commonSendCmd(data){\n    const sendData = [...data];\n    sendData.unshift(0x00);\n    sendData[0] = sendData.length;\n    return JsRNFelica.transceive(sendData)\n  }\n\n  /**\n   *\n   * @param systemCode\n   * @param requestCode\n   * @param timeSlot\n   * @returns {*}\n   */\n  static polling(systemCode, requestCode, timeSlot) {\n    const sendData = [\n      FELICA_COMMAND.CC_POLLING,\n      (systemCode >>> 8) & 0xFF,\n      systemCode & 0xFF,\n      requestCode,\n      timeSlot\n    ];\n    return JsRNFelica.commonSendCmd(sendData);\n  }\n\n  /**\n   *\n   * @param {(Array.<Number> | String)} idm\n   * @param nodes\n   * @returns {*}\n   */\n  static requestService(idm, nodes) {\n    const byteIdm = argIdm2ByteIdm(idm);\n    if(byteIdm === null){\n      return Promise.reject(new Error(\"idm is invalid\"));\n    }\n    const sendData = [\n      FELICA_COMMAND.CC_REQUEST_SERVICE,\n      ...byteIdm\n    ];\n    for(const node in nodes){\n      sendData.push(node & 0xFF);\n      sendData.push((node >>>  8) & 0xFF);\n    }\n    return JsRNFelica.commonSendCmd(sendData);\n  }\n\n  /**\n   *\n   * @param {(Array.<Number> | String)} idm\n   * @returns {*}\n   */\n  static requestResponse(idm) {\n    const byteIdm = argIdm2ByteIdm(idm);\n    if(byteIdm === null){\n      return Promise.reject(new Error(\"idm is invalid\"));\n    }\n    const sendData = [\n      FELICA_COMMAND.CC_REQUEST_RESPONCE,\n      ...byteIdm\n    ];\n    return JsRNFelica.commonSendCmd(sendData);\n  }\n\n  /**\n   *\n   * @param {(Array.<Number> | String)} accessMode\n   * @param serviceCodeIndex\n   * @param blockNum\n   * @param three_bit_length\n   * @returns {number}\n   */\n  static makeBlockElement(accessMode, serviceCodeIndex, blockNum, three_bit_length = false){\n    let data = ((accessMode << 4) | serviceCodeIndex) << 8;\n    data |= (three_bit_length === true) ? 0x00 : 0x80;\n    if(three_bit_length === true){\n      data <<= 8\n    }\n    data |= blockNum;\n    return data;\n  }\n\n  /**\n   *\n   * @param {(Array.<Number> | String)} idm\n   * @param services\n   * @param blockList\n   * @returns {*}\n   */\n  static readWithoutEncryption(idm, services, blockList) {\n    const byteIdm = argIdm2ByteIdm(idm);\n    if(byteIdm === null){\n      return Promise.reject(new Error(\"idm is invalid\"));\n    }\n    const sendData = [\n      FELICA_COMMAND.CC_READ_WITHOUT_ENCRYPTION,\n      ...byteIdm,\n    ];\n    sendData.push(services.length);\n    for(let i = 0; i < services.length; i++){\n      sendData.push(services[i] & 0xFF);\n      sendData.push((services[i] >>> 8) & 0xFF);\n    }\n    sendData.push(blockList.length);\n    for(const block in blockList){\n      sendData.push(block & 0xFF);\n      sendData.push((block >>> 8) & 0xFF);\n      if((block & 0x1000) === 0){\n        sendData.push((block >>> 16) & 0xFF);\n      }\n    }\n    return JsRNFelica.commonSendCmd(sendData);\n  }\n\n  /**\n   *\n   * @param {(Array.<Number> | String)} idm\n   * @param {Array.<Number>} services\n   * @param {Array.<Number>} blockList\n   * @param {Array.<Number>} blockData\n   * @returns {Promise}\n   */\n  static writeWithoutEncryption(idm, services, blockList, blockData) {\n    const byteIdm = argIdm2ByteIdm(idm);\n    if(byteIdm === null){\n      return Promise.reject(new Error(\"idm is invalid\"));\n    }\n    const sendData = [\n      FELICA_COMMAND.CC_READ_WITHOUT_ENCRYPTION,\n      ...byteIdm\n    ];\n    sendData.push(services.length);\n    for(let i = 0; i < services.length; i++){\n      sendData.push(services[i] & 0xFF);\n      sendData.push((services[i] >>> 8) & 0xFF);\n    }\n    sendData.push(blockList.length);\n    for(const block in blockList){\n      sendData.push(block & 0xFF);\n      sendData.push((block >>> 8) & 0xFF);\n      if((block & 0x1000) === 0){\n        sendData.push((block >>> 16) & 0xFF);\n      }\n    }\n    return JsRNFelica.commonSendCmd(sendData);\n  }\n  /**\n   *\n   * @param {(Array.<Number> | String)} idm\n   * @returns {*}\n   */\n  static searchService(idm) {\n    const byteIdm = argIdm2ByteIdm(idm);\n    if(byteIdm === null){\n      return Promise.reject(new Error(\"idm is invalid\"));\n    }\n    const sendData = [\n      FELICA_COMMAND.CC_SEARCH_SERVICE_CODE,\n      ...byteIdm\n    ];\n    return JsRNFelica.commonSendCmd(sendData);\n  }\n\n  /**\n   *\n   * @param {(Array.<Number> | String)} idm\n   * @param idx\n   * @returns {*}\n   */\n  static requestSystem(idm, idx) {\n    const byteIdm = argIdm2ByteIdm(idm);\n    if(byteIdm === null){\n      return Promise.reject(new Error(\"idm is invalid\"));\n    }\n    const sendData = [\n      FELICA_COMMAND.CC_REQUEST_SYSTEM_CODE,\n      ...byteIdm,\n      idx & 0xFF,\n      (idx >>> 8) & 0xFF\n    ];\n    return JsRNFelica.commonSendCmd(sendData);\n  }\n}\n\nexport default JsRNFelica;\nmodule.exports = JsRNFelica;\n",
+    "static": true,
+    "longname": "C:/Users/goroy/RubymineProjects/react-native-felica/packages/ReactNativeFelica/js/JsRNFelica.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "RNFelica",
+    "memberof": "js/JsRNFelica.js",
+    "static": true,
+    "longname": "js/JsRNFelica.js~RNFelica",
+    "access": "public",
+    "export": false,
+    "importPath": "react-native-felica/js/JsRNFelica.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "argIdm2ByteIdm",
+    "memberof": "js/JsRNFelica.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~argIdm2ByteIdm",
+    "access": "public",
+    "export": false,
+    "importPath": "react-native-felica/js/JsRNFelica.js",
+    "importStyle": null,
+    "description": "Convert idm for argument to byte array",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array.<Number>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array.<Number> ",
+          " String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "idm",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array.<Number>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "class",
+    "name": "JsRNFelica",
+    "memberof": "js/JsRNFelica.js",
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica",
+    "access": "public",
+    "export": true,
+    "importPath": "react-native-felica/js/JsRNFelica.js",
+    "importStyle": "JsRNFelica",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "eventemitter2~EventEmitter2"
+    ]
+  },
+  {
+    "__docId__": 54,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "js/JsRNFelica.js~JsRNFelica#constructor",
+    "access": "public",
+    "description": " Constructor for JsRNFelica",
+    "lineNumber": 28
+  },
+  {
+    "__docId__": 55,
+    "kind": "method",
+    "name": "haveNfc",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.haveNfc",
+    "access": "public",
+    "description": "",
+    "lineNumber": 39,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{*}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 56,
+    "kind": "method",
+    "name": "enableNfc",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.enableNfc",
+    "access": "public",
+    "description": "",
+    "lineNumber": 47,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{*}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 57,
+    "kind": "method",
+    "name": "connect",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.connect",
+    "access": "public",
+    "description": "",
+    "lineNumber": 54,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "method",
+    "name": "close",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.close",
+    "access": "public",
+    "description": "",
+    "lineNumber": 61,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "method",
+    "name": "transceive",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.transceive",
+    "access": "public",
+    "description": "",
+    "lineNumber": 70,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{*}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "transceiveString",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.transceiveString",
+    "access": "public",
+    "description": "",
+    "lineNumber": 79,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{*}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "method",
+    "name": "commonSendCmd",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.commonSendCmd",
+    "access": "public",
+    "description": "",
+    "lineNumber": 88,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{*}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "polling",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.polling",
+    "access": "public",
+    "description": "",
+    "lineNumber": 102,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{*}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "systemCode",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "requestCode",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "timeSlot",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "requestService",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.requestService",
+    "access": "public",
+    "description": "",
+    "lineNumber": 119,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{*}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array.<Number> ",
+          " String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "idm",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "nodes",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "method",
+    "name": "requestResponse",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.requestResponse",
+    "access": "public",
+    "description": "",
+    "lineNumber": 140,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{*}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array.<Number> ",
+          " String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "idm",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "method",
+    "name": "makeBlockElement",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.makeBlockElement",
+    "access": "public",
+    "description": "",
+    "lineNumber": 160,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{number}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array.<Number> ",
+          " String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "accessMode",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "serviceCodeIndex",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "blockNum",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "three_bit_length",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "method",
+    "name": "readWithoutEncryption",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.readWithoutEncryption",
+    "access": "public",
+    "description": "",
+    "lineNumber": 177,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{*}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array.<Number> ",
+          " String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "idm",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "services",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "blockList",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "method",
+    "name": "writeWithoutEncryption",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.writeWithoutEncryption",
+    "access": "public",
+    "description": "",
+    "lineNumber": 210,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array.<Number> ",
+          " String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "idm",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array.<Number>"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "services",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array.<Number>"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "blockList",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array.<Number>"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "blockData",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "method",
+    "name": "searchService",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.searchService",
+    "access": "public",
+    "description": "",
+    "lineNumber": 239,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{*}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array.<Number> ",
+          " String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "idm",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "method",
+    "name": "requestSystem",
+    "memberof": "js/JsRNFelica.js~JsRNFelica",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/JsRNFelica.js~JsRNFelica.requestSystem",
+    "access": "public",
+    "description": "",
+    "lineNumber": 257,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{*}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array.<Number> ",
+          " String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "idm",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "idx",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "file",
+    "name": "js/Util.js",
+    "content": "class Util extends EventEmitter2 {\n  /**\n   *\n   * @param {String} str\n   * @returns {Array}\n   */\n  static stringHex2Byte(str) {\n    const data = [];\n    for (let i = 0; i < str.length; i += 2) {\n      data.push(parseInt(str.substr(i,2), 16));\n    }\n    return data;\n  }\n\n  /**\n   *\n   * @param {(Array.<Number>)} byteArray\n   * @returns {string}\n   */\n  static byteToHexString(byteArray) {\n    let data = '';\n    for (let i = 0; i < byteArray.length; i++) {\n      const hex = (byteArray[i] & 0xff).toString(16);\n      data +=  ('00' + hex).slice(-2);\n    }\n    return data.toUpperCase();\n  }\n}\n\nexport default Util;\nmodule.exports = Util;\n",
+    "static": true,
+    "longname": "C:/Users/goroy/RubymineProjects/react-native-felica/packages/ReactNativeFelica/js/Util.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 71,
+    "kind": "class",
+    "name": "Util",
+    "memberof": "js/Util.js",
+    "static": true,
+    "longname": "js/Util.js~Util",
+    "access": "public",
+    "export": true,
+    "importPath": "react-native-felica/js/Util.js",
+    "importStyle": "Util",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "EventEmitter2"
+    ]
+  },
+  {
+    "__docId__": 72,
+    "kind": "method",
+    "name": "stringHex2Byte",
+    "memberof": "js/Util.js~Util",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/Util.js~Util.stringHex2Byte",
+    "access": "public",
+    "description": "",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "str",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "method",
+    "name": "byteToHexString",
+    "memberof": "js/Util.js~Util",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "js/Util.js~Util.byteToHexString",
+    "access": "public",
+    "description": "",
+    "lineNumber": 20,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array.<Number>"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "byteArray",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "kind": "index",
+    "content": "\n# react-native-felica\n\n## Getting started\n\n`$ npm install react-native-felica --save`\n\n### Mostly automatic installation\n\n`$ react-native link react-native-felica`\n\n### Manual installation\n\n#### Android\n\n1. Open up `android/app/src/main/java/[...]/MainActivity.java`\n  - Add `import com.reactlibrary.RNFelicaPackage;` to the imports at the top of the file\n  - Add `new RNFelicaPackage()` to the list returned by the `getPackages()` method\n2. Append the following lines to `android/settings.gradle`:\n  \t```\n  \tinclude ':react-native-felica'\n  \tproject(':react-native-felica').projectDir = new File(rootProject.projectDir, \t'../node_modules/react-native-felica/android')\n  \t```\n3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:\n  \t```\n      compile project(':react-native-felica')\n  \t```\n\n## Usage\n```javascript\nimport RNFelica from 'react-native-felica';\n\n// TODO: What to do with the module?\nRNFelica;\n```\n",
+    "longname": "C:\\Users\\goroy\\RubymineProjects\\react-native-felica\\packages\\ReactNativeFelica\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"react-native-felica\",\n  \"version\": \"0.0.1\",\n  \"description\": \"\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"test\": \"jest\",\n    \"doc\": \"esdoc && opener ./docs/index.html\"\n  },\n  \"keywords\": [\n    \"react-native\"\n  ],\n  \"author\": \"\",\n  \"license\": \"\",\n  \"peerDependencies\": {\n    \"react-native\": \"^0.41.2\"\n  },\n  \"dependencies\": {\n    \"eventemitter2\": \"^5.0.1\"\n  },\n  \"devDependencies\": {\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"jest\": \"^22.1.4\",\n    \"opener\": \"^1.4.3\"\n  }\n}\n",
+    "longname": "C:\\Users\\goroy\\RubymineProjects\\react-native-felica\\packages\\ReactNativeFelica\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

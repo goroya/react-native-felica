@@ -1,0 +1,22 @@
+{
+  "name": "react-native-felica",
+  "version": "0.0.1",
+  "description": "Using felica on react-native",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "react-native",
+    "felica",
+    "nfc",
+    "android"
+  ],
+  "author": "goroya.io <goroyadevelop@gmail.com> (https://github.com/goroya)",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  },
+  "dependencies": {
+    "buffer": "^5.0.8",
+    "eventemitter2": "^5.0.1"
+  }
+}

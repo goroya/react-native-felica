@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="err_msg_nfc_not_implement">NFC is not implemented</string>
+    <string name="err_msg_nfc_not_enable">NFC is not enabled</string>
+    <string name="err_msg_nfc_not_detect">Felica has not been detected yet</string>
+</resources>
