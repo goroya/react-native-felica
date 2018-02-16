@@ -22,7 +22,6 @@
     "react-native": "^0.41.2"
   },
   "dependencies": {
-    "buffer": "^5.0.8",
     "eventemitter2": "^5.0.1"
   },
   "devDependencies": {

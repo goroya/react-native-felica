@@ -4,6 +4,6 @@
     "eslint": "^4.16.0",
     "eslint-plugin-react": "^7.6.0",
     "eslint-plugin-react-native": "^3.2.1",
-    "lerna": "^2.8.0"
+    "lerna": "^2.9.0"
   }
 }
