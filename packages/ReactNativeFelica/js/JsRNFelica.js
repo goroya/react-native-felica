@@ -164,7 +164,6 @@ class JsRNFelica {
     const sendData = [...data];
     sendData.unshift(0x00);
     sendData[0] = sendData.length;
-    //console.log("send data", sendData);
     return JsRNFelica.transceive(sendData)
   }
 
@@ -421,7 +420,6 @@ class JsRNFelica {
     ];
     try {
       const recvData = await JsRNFelica.commonSendCmd(sendData);
-      console.log(recvData);
       const parseRecvData = {
         dataLength: recvData[0],
         responceCode: recvData[1],
@@ -463,7 +461,6 @@ class JsRNFelica {
     ];
     try {
       const recvData = await JsRNFelica.commonSendCmd(sendData);
-      console.log(recvData)
       const parseRecvData = {
         dataLength: recvData[0],
         responceCode: recvData[1],

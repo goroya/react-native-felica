@@ -113,7 +113,6 @@ const pluginKururu = {
         tailResult.enterStationName = kururuCode[tailResult.enterStationCode] ? kururuCode[tailResult.enterStationCode].name: '不明';
         tailResult.exitStationName = kururuCode[tailResult.exitStationCode] ? kururuCode[tailResult.exitStationCode].name : '不明';
       }
-      console.log("result", result);
       return Promise.resolve(result);
     } catch (e) {
       console.log("ew", e);
