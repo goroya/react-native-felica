@@ -5,27 +5,19 @@
  */
 
 import React, { Component } from 'react';
-import {
-  ScrollView
-} from 'react-native';
 import styles from "./styles";
 import {
-  Container, Header, Title, Content, Footer, FooterTab,
-  Button, Left, Right, Body, Icon, Text,
-  List, ListItem,
-  Card, CardItem,
-  View
+  Container, Header, Title, Text, List, ListItem, Card, CardItem, View, Body
 } from 'native-base';
 import RNFelica from 'react-native-felica';
-import JsRNFelica from "../ReactNativeFelica/js/JsRNFelica";
 
-RNFelica.on(JsRNFelica.EVENT.ANDROID_ON_HOST_RESUME, async () => {
+RNFelica.on(RNFelica.EVENT.ANDROID_ON_HOST_RESUME, async () => {
   console.log("EVENT ANDROID_ON_HOST_RESUME");
-  await JsRNFelica.enableForegroundDispatch().catch(err => { console.info(err); })
+  await RNFelica.enableForegroundDispatch().catch(err => { console.info(err); })
 });
-RNFelica.on(JsRNFelica.EVENT.ANDROID_ON_HOST_PAUSE, async () => {
+RNFelica.on(RNFelica.EVENT.ANDROID_ON_HOST_PAUSE, async () => {
   console.log("EVENT ANDROID_ON_HOST_PAUSE");
-  await JsRNFelica.disableForegroundDispatch().catch(err => { console.info(err); })
+  await RNFelica.disableForegroundDispatch().catch(err => { console.info(err); })
 });
 
 let startupFelicaInfo = null;
@@ -33,7 +25,7 @@ async function startupFelicaCb(event){
   console.log("Startup FELICA_DISCOVER", event);
   startupFelicaInfo = event;
 }
-RNFelica.on(JsRNFelica.EVENT.FELICA_DISCOVER, startupFelicaCb);
+RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, startupFelicaCb);
 
 function bytes2hexString(bytes) {
   return bytes.map((val) => {
@@ -65,10 +57,10 @@ export default class App extends Component<{}> {
   }
   componentDidMount() {
     if(startupFelicaInfo !== null){
-      RNFelica.off(JsRNFelica.EVENT.FELICA_DISCOVER, startupFelicaCb);
+      RNFelica.off(RNFelica.EVENT.FELICA_DISCOVER, startupFelicaCb);
       this.updateFelicaView(startupFelicaInfo);
     }
-    RNFelica.on(JsRNFelica.EVENT.FELICA_DISCOVER, async (event) => {
+    RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, async (event) => {
       console.log("FELICA_DISCOVER");
       await this.updateFelicaView(event);
     });
