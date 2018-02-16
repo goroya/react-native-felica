@@ -150,10 +150,10 @@ class JsRNFelica {
     eventEmitter2.removeAllListeners(event);
   }
   static onFelicaDitect(event, callback) {
-    eventEmitter2.on(JsRNFelica.EVENT_FELICA_DITECT, callback);
+    eventEmitter2.on(JsRNFelica.EVENT.FELICA_DISCOVER, callback);
   }
   static offFelicaDitect(event, callback) {
-    eventEmitter2.off(JsRNFelica.EVENT_FELICA_DITECT, callback);
+    eventEmitter2.off(JsRNFelica.EVENT.FELICA_DISCOVER, callback);
   }
   /**
    * Send Command

@@ -1,5 +1,6 @@
-
 # react-native-felica
+
+[![NPM](https://nodei.co/npm/react-native-felica.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-native-felica/)
 
 ## Getting started
 
@@ -9,45 +10,54 @@
 
 `$ react-native link react-native-felica`
 
-### Manual installation
+## ESDoc Docment
+ESdoc Document is bellow
+https://goroya.github.io/react-native-felica/
 
+# API Docment
+## Usage
+```js
+// Require the module
+import RNFelica from 'react-native-felica';
+RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, async (event) => {
+    // Check having NFC equipment
+    await RNFelica.haveNfc()
 
-#### iOS
+    // Check enabling NFC
+    await RNFelica.enableNfc()
 
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-felica` and add `RNFelica.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNFelica.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
+    // Connecting Felica
+    await RNFelica.connect()
 
-#### Android
+    // Disconnect Felica
+    await RNFelica.close()
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNFelicaPackage;` to the imports at the top of the file
-  - Add `new RNFelicaPackage()` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':react-native-felica'
-  	project(':react-native-felica').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-felica/android')
-  	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      compile project(':react-native-felica')
-  	```
+    // 
+    await RNFelica.enableForegroundDispatch()
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
+    // 
+    await RNFelica.disableForegroundDispatch()
 
-1. In Visual Studio add the `RNFelica.sln` in `node_modules/react-native-felica/windows/RNFelica.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Felica.RNFelica;` to the usings at the top of the file
-  - Add `new RNFelicaPackage()` to the `List<IReactPackage>` returned by the `Packages` method
+    // Send Raw data to Felica
+    await RNFelica.transceive(data)
 
+}
+```
 
 ## Usage
 ```javascript
 import RNFelica from 'react-native-felica';
 
-// TODO: What to do with the module?
-RNFelica;
+RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, async (event) => {
+    console.log("Felica Info", event);
+
+    const pol = await RNFelica.polling();
+    console.log("poll:" + RNFelica.util.byteToHexString(pol));
+
+    const read = await RNFelica.readWithoutEncryption(event.idm, [0x090F], [0x000000]);
+    console.log("read", RNFelica.util.byteToHexString(read));
+
+    const reqSysCode = await RNFelica.requestSystemCode(event.idm);
+    console.log("connect ", reqSysCode);
+});
 ```
-  
