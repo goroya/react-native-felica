@@ -43,34 +43,80 @@ function bytes2hexString(bytes) {
 export default class App extends Component<{}> {
   constructor(props) {
     super(props);
+    this.state = {
+      idm: "",
+      pmm: ""
+    };
+  }
+  async updateFelicaView(info) {
+    this.setState({
+      idm: bytes2hexString(info.idm),
+      pmm: bytes2hexString(info.pmm),
+      type: "",
+      info: {}
+    });
+    await RNFelica.connect();
+    const anaResult = await RNFelica.analyze();
+    this.setState({
+      type: anaResult.type,
+      history: anaResult.history
+    });
+    await RNFelica.close();
+  }
+  componentDidMount() {
     if(startupFelicaInfo !== null){
       RNFelica.off(JsRNFelica.EVENT.FELICA_DISCOVER, startupFelicaCb);
       this.updateFelicaView(startupFelicaInfo);
     }
-  }
-  updateFelicaView(info) {
-    this.state = {
-      idm: bytes2hexString(info.idm),
-      pmm: bytes2hexString(info.pmm)
-    };
-  }
-  componentDidMount() {
     RNFelica.on(JsRNFelica.EVENT.FELICA_DISCOVER, async (event) => {
       console.log("FELICA_DISCOVER");
-      updateFelicaView(event);
-      await RNFelica.connect();
-      const pol = await RNFelica.polling(0xffff, 0x00);
-      console.log("poll:", pol);
-      const anaResult = await RNFelica.analyze();
-      console.log("anaResult", anaResult);
-      await RNFelica.close();
+      await this.updateFelicaView(event);
     });
   }
   componentWillUnmount(){
     console.log("componentWillUnmount");
   }
   render() {
-    const cc = 100;
+    let CardView = (<Text style={styles.noneText}>カード情報</Text>);
+    if(this.state.type === "CJRC"){
+      CardView = (
+          <List dataArray={this.state.history}
+                renderRow={(item) => {
+                  return (
+                    <ListItem>
+                      <View>
+                        <Text>{item.date.yy}/{item.date.mm}/{item.date.dd}</Text>
+                        <Text>入場駅コード: {item.enterStationCode}</Text>
+                        <Text>退場駅コード: {item.exitStationCode}</Text>
+                        <Text>残高 {item.balance}円</Text>
+                      </View>
+                    </ListItem>
+                  );
+                }}
+          >
+          </List>
+      );
+    }else if(this.state.type === "Kururu"){
+      CardView = (
+          <List dataArray={this.state.history}
+                renderRow={(item) => {
+                  return (
+                    <ListItem>
+                      <View>
+                        <Text>{item.date.yy}/{item.date.mm}/{item.date.dd}</Text>
+                        <Text>入場駅: {item.enterStationName}</Text>
+                        <Text>降車駅: {item.exitStationName}</Text>
+                        <Text>乗車時刻: {item.enterTime.hour}:{item.enterTime.min}</Text>
+                        <Text>降車時刻: {item.exitTime.hour}:{item.exitTime.min}</Text>
+                        <Text>残高 {item.balance}円</Text>
+                      </View>
+                    </ListItem>
+                  );
+                }}
+          >
+          </List>
+      );
+    }
     return (
       <Container style={styles.container}>
         <Header>
@@ -79,24 +125,17 @@ export default class App extends Component<{}> {
           </Body>
         </Header>
         <List>
-          <ListItem itemHeader first>
-            <Text>基本情報</Text>
+          <ListItem>
+            <Text>IDM: {this.state.idm}</Text>
+          </ListItem>
+          <ListItem>
+            <Text>PMM: {this.state.pmm}</Text>
+          </ListItem>
+          <ListItem>
+            <Text>カードの種類: {this.state.type}</Text>
           </ListItem>
         </List>
-        <ScrollView>
-          <Card>
-            <CardItem>
-              <Text style={{fontSize:96}}>Scroll me plz1a</Text>
-            </CardItem>
-          </Card>
-          <Text style={{fontSize:96}}>Scroll me plz1a</Text>
-          <Text style={{fontSize:96}}>Scroll me plz2</Text>
-          <Text style={{fontSize:96}}>Scroll me plz3</Text>
-          <Text style={{fontSize:96}}>Scroll me plz4</Text>
-          <Text style={{fontSize:96}}>Scroll me plz5</Text>
-          <Text style={{fontSize:96}}>Scroll me plz6</Text>
-          <Text style={{fontSize:96}}>Scroll me plz6</Text>
-        </ScrollView>
+        {CardView}
       </Container>
     );
   }

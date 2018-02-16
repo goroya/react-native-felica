@@ -29,7 +29,7 @@ const pluginCJRC = {
           usageType: oneBlockData[1],
           settlementType: oneBlockData[2],
           entranceType: oneBlockData[3],
-          data: {
+          date: {
             yy: oneBlockData[4] >>> 1,
             mm: ((oneBlockData[4] & 0x01) << 3) | (oneBlockData[5] >>> 5),
             dd: oneBlockData[5] & 0x1F,

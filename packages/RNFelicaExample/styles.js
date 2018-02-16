@@ -3,9 +3,8 @@ export default {
     flex: 1,
     backgroundColor: "#FF0"
   },
-  balanceText: {
-    marginTop: 20,
-    fontSize: 20,
+  noneText: {
+    margin: 10,
     textAlign: 'center'
   }
 };

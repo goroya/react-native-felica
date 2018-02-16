@@ -59,11 +59,13 @@ function discount2ja(data){
 }
 
 const pluginKururu = {
-  kind: "CJRC",
+  kind: "Kururu",
   cb: async (rnFelica, systemCodePollingResp) => {
     try {
       const {idm} = systemCodePollingResp;
-      const result = {};
+      const result = {
+        type: "Kururu",
+      };
       // 0x000F
       result.history = [];
       for (let i = 0; i < 10; i++) {
@@ -72,13 +74,11 @@ const pluginKururu = {
         const oneBlockData = blockData[0];
         result.history.push({
           rawData: oneBlockData,
-          //
-          type: "Kururu",
           // 年月日
-          data: {
-            year: oneBlockData[0] >>> 1,
-            month: ((oneBlockData[0] & 0x01) << 3) | (oneBlockData[1] >>> 5),
-            day: oneBlockData[1] & 0x1F,
+          date: {
+            yy: oneBlockData[0] >>> 1,
+            mm: ((oneBlockData[0] & 0x01) << 3) | (oneBlockData[1] >>> 5),
+            dd: oneBlockData[1] & 0x1F,
           },
           // 降車時刻
           exitTime: {
