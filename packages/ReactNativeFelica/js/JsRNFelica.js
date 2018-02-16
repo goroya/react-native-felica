@@ -218,7 +218,7 @@ class JsRNFelica {
    * @param nodes
    * @returns {Promise<RequestService>}
    */
-  static async requestService(idm, nodes) {
+  static async requestService(idm, nodes = []) {
     const byteIdm = argIdm2ByteIdm(idm);
     if(byteIdm === null){
       return Promise.reject(new Error("idm is invalid"));
