@@ -3,7 +3,9 @@
   "version": "0.0.2",
   "description": "Using felica on react-native",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "doc": "esdoc"
+  },
   "keywords": [
     "react-native",
     "felica",
@@ -22,5 +24,9 @@
   "dependencies": {
     "buffer": "^5.0.8",
     "eventemitter2": "^5.0.1"
+  },
+  "devDependencies": {
+    "esdoc": "^1.0.4",
+    "esdoc-standard-plugin": "^1.0.0"
   }
 }
