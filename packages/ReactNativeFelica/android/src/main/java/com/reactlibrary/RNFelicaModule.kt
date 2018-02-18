@@ -14,9 +14,6 @@ import java.io.ByteArrayOutputStream
 import java.io.IOException
 import android.app.PendingIntent
 import android.content.IntentFilter
-import android.nfc.tech.NfcF
-
-
 
 class RNFelicaModule(private val reactContext: ReactApplicationContext)
   : ReactContextBaseJavaModule(reactContext), LifecycleEventListener, ActivityEventListener {
