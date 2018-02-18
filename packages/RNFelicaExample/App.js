@@ -10,14 +10,15 @@ import {
   Container, Header, Title, Text, List, ListItem, Card, CardItem, View, Body
 } from 'native-base';
 import RNFelica from 'react-native-felica';
+import RNAndroidLifeCycle from 'react-native-android-lifecycle';
 
-RNFelica.on(RNFelica.EVENT.ANDROID_ON_HOST_RESUME, async () => {
+RNAndroidLifeCycle.on(RNAndroidLifeCycle.EVENT.ON_HOST_RESUME, async () => {
   console.log("EVENT ANDROID_ON_HOST_RESUME");
   await RNFelica.enableForegroundDispatch().catch(err => {
     console.info(err);
   })
 });
-RNFelica.on(RNFelica.EVENT.ANDROID_ON_HOST_PAUSE, async () => {
+RNAndroidLifeCycle.on(RNAndroidLifeCycle.EVENT.ON_HOST_PAUSE, async () => {
   console.log("EVENT ANDROID_ON_HOST_PAUSE");
   await RNFelica.disableForegroundDispatch().catch(err => {
     console.info(err);

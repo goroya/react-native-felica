@@ -1553,6 +1553,10 @@ event-target-shim@^1.0.5:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-1.1.1.tgz#a86e5ee6bdaa16054475da797ccddf0c55698491"
 
+eventemitter2@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/eventemitter2/-/eventemitter2-5.0.1.tgz#6197a095d5fb6b57e8942f6fd7eaad63a09c9452"
+
 eventemitter3@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.0.1.tgz#4ce66c3fc5b5a6b9f2245e359e1938f1ab10f960"
@@ -3686,6 +3690,12 @@ react-devtools-core@3.0.0:
   dependencies:
     shell-quote "^1.6.1"
     ws "^2.0.3"
+
+react-native-android-lifecycle@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-android-lifecycle/-/react-native-android-lifecycle-1.2.0.tgz#d3cc6981a79cf69fae01e6856c990d6868701849"
+  dependencies:
+    eventemitter2 "^5.0.1"
 
 react-native-drawer@2.5.0:
   version "2.5.0"

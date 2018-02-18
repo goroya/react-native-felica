@@ -14,18 +14,13 @@ import java.io.ByteArrayOutputStream
 import java.io.IOException
 import android.app.PendingIntent
 import android.content.IntentFilter
+import com.felica.reactnative.gogoroya.R
 
 class RNFelicaModule(private val reactContext: ReactApplicationContext)
   : ReactContextBaseJavaModule(reactContext), LifecycleEventListener, ActivityEventListener {
   companion object {
     @JvmField val TAG:String = RNFelicaModule::class.java.simpleName
     const val EVENT_FELICA_DISCOVER:String = "EVENT_FELICA_DISCOVER"
-    const val EVENT_ON_NEW_INTENT:String = "EVENT_ON_NEW_INTENT"
-    const val EVENT_ON_ACTIVITY_RESULT:String = "EVENT_ON_ACTIVITY_RESULT"
-
-    const val EVENT_ON_HOST_RESUME:String = "EVENT_ON_HOST_RESUME"
-    const val EVENT_ON_HOST_PAUSE:String = "EVENT_ON_HOST_PAUSE"
-    const val EVENT_ON_HOST_DESTROY:String = "EVENT_ON_HOST_DESTROY"
   }
   private var felicaLib: FelicaLib? = null
   private var startupIntentProcessed = false
@@ -43,11 +38,6 @@ class RNFelicaModule(private val reactContext: ReactApplicationContext)
     val constants = HashMap<String, Any>()
     val map = Arguments.createMap()
     map.putString("FELICA_DISCOVER", EVENT_FELICA_DISCOVER)
-    map.putString("ANDROID_ON_NEW_INTENT", EVENT_ON_NEW_INTENT)
-    map.putString("ANDROID_ON_ACTIVITY_RESULT", EVENT_ON_ACTIVITY_RESULT)
-    map.putString("ANDROID_ON_HOST_RESUME", EVENT_ON_HOST_RESUME)
-    map.putString("ANDROID_ON_HOST_PAUSE", EVENT_ON_HOST_PAUSE)
-    map.putString("ANDROID_ON_HOST_DESTROY", EVENT_ON_HOST_DESTROY)
     constants["EVENT"] = map
     return constants
   }
@@ -99,12 +89,10 @@ class RNFelicaModule(private val reactContext: ReactApplicationContext)
     if (intent != null) {
       handleIntent(intent)
     }
-    sendEvent(EVENT_ON_NEW_INTENT, Arguments.createMap())
   }
 
   override fun onActivityResult(activity: Activity?, requestCode: Int, resultCode: Int, data: Intent?) {
     Log.d(TAG, "onActivityResult")
-    sendEvent(EVENT_ON_ACTIVITY_RESULT, Arguments.createMap())
   }
 
   override fun onHostResume() {
@@ -114,18 +102,15 @@ class RNFelicaModule(private val reactContext: ReactApplicationContext)
         handleIntent(reactApplicationContext.currentActivity!!.intent)
       }
       this.startupIntentProcessed = true
-      sendEvent(EVENT_ON_HOST_RESUME, Arguments.createMap())
     }
   }
 
   override fun onHostPause() {
     Log.d(TAG, "onHostPause")
-    sendEvent(EVENT_ON_HOST_PAUSE, Arguments.createMap())
   }
 
   override fun onHostDestroy() {
     Log.d(TAG, "onHostDestroy")
-    sendEvent(EVENT_ON_HOST_DESTROY, Arguments.createMap())
   }
 
   @ReactMethod

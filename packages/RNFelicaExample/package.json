@@ -10,6 +10,7 @@
     "native-base": "^2.3.7",
     "react": "16.2.0",
     "react-native": "0.53.0",
+    "react-native-android-lifecycle": "^1.2.0",
     "react-native-felica": "^0.0.5"
   },
   "devDependencies": {

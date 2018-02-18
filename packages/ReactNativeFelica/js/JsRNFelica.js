@@ -5,7 +5,7 @@ import Util from "./Util";
 import AnalyzeFunc from "./analyze";
 
 const { RNFelica } = NativeModules;
-const eventEmitter2 = new EventEmitter2()
+const eventEmitter2 = new EventEmitter2();
 
 /**
  * Convert idm for argument to byte array
@@ -29,21 +29,11 @@ function argIdm2ByteIdm(idm){
  * @type {
  *   {
  *     FELICA_DISCOVER: String,
- *     ANDROID_ON_NEW_INTENT: String,
- *     ANDROID_ON_ACTIVITY_RESULT: String,
- *     ANDROID_ON_HOST_RESUME: String,
- *     ANDROID_ON_HOST_PAUSE: String,
- *     ANDROID_ON_HOST_DESTROY: String
  *   }
  * }
  */
 const RNFelicaEvent = {
-  FELICA_DISCOVER: RNFelica.EVENT.FELICA_DISCOVER,
-  ANDROID_ON_NEW_INTENT: RNFelica.EVENT.ANDROID_ON_NEW_INTENT,
-  ANDROID_ON_ACTIVITY_RESULT: RNFelica.EVENT.ANDROID_ON_ACTIVITY_RESULT,
-  ANDROID_ON_HOST_RESUME: RNFelica.EVENT.ANDROID_ON_HOST_RESUME,
-  ANDROID_ON_HOST_PAUSE: RNFelica.EVENT.ANDROID_ON_HOST_PAUSE,
-  ANDROID_ON_HOST_DESTROY: RNFelica.EVENT.ANDROID_ON_HOST_DESTROY,
+  FELICA_DISCOVER: RNFelica.EVENT.FELICA_DISCOVER
 };
 for(const key in RNFelicaEvent){
   if(RNFelicaEvent.hasOwnProperty(key)){
@@ -58,12 +48,7 @@ class JsRNFelica {
    *
    * @returns {
    *   {
-   *     FELICA_DISCOVER: String,
-   *     ANDROID_ON_NEW_INTENT: String,
-   *     ANDROID_ON_ACTIVITY_RESULT: String,
-   *     ANDROID_ON_HOST_RESUME: String,
-   *     ANDROID_ON_HOST_PAUSE: String,
-   *     ANDROID_ON_HOST_DESTROY: String
+   *     FELICA_DISCOVER: String
    *   }
    * }
    * @constructor
