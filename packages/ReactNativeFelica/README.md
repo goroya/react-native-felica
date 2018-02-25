@@ -10,11 +10,11 @@
 
 `$ react-native link react-native-felica`
 
-## ESDoc Docment
-ESdoc Document is bellow
+## TypeDoc Document
+TypeDoc Document is bellow
 https://goroya.github.io/react-native-felica/
 
-# API Docment
+# API Document
 ## Usage
 ```js
 // Require the module
