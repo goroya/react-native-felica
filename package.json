@@ -1,7 +1,8 @@
 {
   "scripts": {
     "clean": "lerna clean",
-    "postinstall": "lerna bootstrap"
+    "postinstall": "lerna bootstrap",
+    "doc": "lerna run --scope react-native-felica doc"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
