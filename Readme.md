@@ -10,11 +10,11 @@
 
 `$ react-native link react-native-felica`
 
-## Docment
+## Document
 
 [NPM Docment](/packages/ReactNativeFelica)
 
-## ESDoc
+## TypeDoc
 https://goroya.github.io/react-native-felica/
 
 
