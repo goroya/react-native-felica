@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>react-native-felica</title>
+	<title>&quot;index&quot; | react-native-felica</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">react-native-felica</a>
+					<a href="../index.html" class="title">react-native-felica</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -53,85 +53,128 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="globals.html">Globals</a>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="_index_.html">&quot;index&quot;</a>
 				</li>
 			</ul>
-			<h1> react-native-felica</h1>
+			<h1>External module &quot;index&quot;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<h1 id="react-native-felica">react-native-felica</h1>
-				<p><a href="https://nodei.co/npm/react-native-felica/"><img src="https://nodei.co/npm/react-native-felica.png?downloads=true&amp;downloadRank=true&amp;stars=true" alt="NPM"></a></p>
-				<h2 id="getting-started">Getting started</h2>
-				<p><code>$ npm install react-native-felica --save</code></p>
-				<h3 id="mostly-automatic-installation">Mostly automatic installation</h3>
-				<p><code>$ react-native link react-native-felica</code></p>
-				<h2 id="esdoc-docment">ESDoc Docment</h2>
-				<p>ESdoc Document is bellow
-				<a href="https://goroya.github.io/react-native-felica/">https://goroya.github.io/react-native-felica/</a></p>
-				<h1 id="api-docment">API Docment</h1>
-				<h2 id="usage">Usage</h2>
-				<pre><code class="lang-js"><span class="hljs-comment">// Require the module</span>
-<span class="hljs-keyword">import</span> RNFelica <span class="hljs-keyword">from</span> <span class="hljs-string">'react-native-felica'</span>;
-RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, <span class="hljs-keyword">async</span> (event) =&gt; {
-    <span class="hljs-comment">// Check having NFC equipment</span>
-    <span class="hljs-keyword">await</span> RNFelica.haveNfc()
-
-    <span class="hljs-comment">// Check enabling NFC</span>
-    <span class="hljs-keyword">await</span> RNFelica.enableNfc()
-
-    <span class="hljs-comment">// Connecting Felica</span>
-    <span class="hljs-keyword">await</span> RNFelica.connect()
-
-    <span class="hljs-comment">// Disconnect Felica</span>
-    <span class="hljs-keyword">await</span> RNFelica.close()
-
-    <span class="hljs-comment">// </span>
-    <span class="hljs-keyword">await</span> RNFelica.enableForegroundDispatch()
-
-    <span class="hljs-comment">// </span>
-    <span class="hljs-keyword">await</span> RNFelica.disableForegroundDispatch()
-
-    <span class="hljs-comment">// Send Raw data to Felica</span>
-    <span class="hljs-keyword">await</span> RNFelica.transceive(data)
-
-}
-</code></pre>
-				<h2 id="usage">Usage</h2>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> RNFelica <span class="hljs-keyword">from</span> <span class="hljs-string">'react-native-felica'</span>;
-
-RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, <span class="hljs-keyword">async</span> (event) =&gt; {
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Felica Info"</span>, event);
-
-    <span class="hljs-keyword">const</span> pol = <span class="hljs-keyword">await</span> RNFelica.polling();
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"poll:"</span> + RNFelica.util.byteToHexString(pol));
-
-    <span class="hljs-keyword">const</span> read = <span class="hljs-keyword">await</span> RNFelica.readWithoutEncryption(event.idm, [<span class="hljs-number">0x090F</span>], [<span class="hljs-number">0x000000</span>]);
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"read"</span>, RNFelica.util.byteToHexString(read));
-
-    <span class="hljs-keyword">const</span> reqSysCode = <span class="hljs-keyword">await</span> RNFelica.requestSystemCode(event.idm);
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"connect "</span>, reqSysCode);
-});
-</code></pre>
-			</div>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_index_.jsrnfelica.html" class="tsd-kind-icon">JSRNFelica</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_index_.irnfelicaevent.html" class="tsd-kind-icon">IRNFelica<wbr>Event</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#rnfelica" class="tsd-kind-icon">RNFelica</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_index_.html#jsrnfelica-1" class="tsd-kind-icon">jsRNFelica</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#createinstance" class="tsd-kind-icon">create<wbr>Instance</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="rnfelica" class="tsd-anchor"></a>
+					<h3>RNFelica</h3>
+					<div class="tsd-signature tsd-kind-icon">RNFelica<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:9</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="jsrnfelica-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> jsRNFelica</h3>
+					<div class="tsd-signature tsd-kind-icon">jsRNFelica<span class="tsd-signature-symbol">:</span> <a href="../classes/_index_.jsrnfelica.html" class="tsd-signature-type">JSRNFelica</a><span class="tsd-signature-symbol"> =&nbsp;createInstance()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:227</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="createinstance" class="tsd-anchor"></a>
+					<h3>create<wbr>Instance</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Instance<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_index_.jsrnfelica.html" class="tsd-signature-type">JSRNFelica</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:224</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Make JSRNFelica class instance</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_index_.jsrnfelica.html" class="tsd-signature-type">JSRNFelica</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_index_.html">"index"</a>
+					<li class="current tsd-kind-external-module">
+						<a href="_index_.html">"index"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_index_.jsrnfelica.html" class="tsd-kind-icon">JSRNFelica</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_index_.irnfelicaevent.html" class="tsd-kind-icon">IRNFelica<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_index_.html#rnfelica" class="tsd-kind-icon">RNFelica</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_index_.html#jsrnfelica-1" class="tsd-kind-icon">jsRNFelica</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_index_.html#createinstance" class="tsd-kind-icon">create<wbr>Instance</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -200,7 +243,7 @@ RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, <span class="hljs-keyword">async</sp
 	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

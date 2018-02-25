@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, {Component} from 'react';
 import styles from "./styles";
 import {
@@ -24,7 +18,7 @@ RNAndroidLifeCycle.on(RNAndroidLifeCycle.EVENT.ON_HOST_PAUSE, async () => {
     console.info(err);
   })
 });
-
+console.log(RNFelica);
 let startupFelicaInfo = null;
 
 async function startupFelicaCb(event) {
@@ -33,12 +27,6 @@ async function startupFelicaCb(event) {
 }
 
 RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, startupFelicaCb);
-
-function bytes2hexString(bytes) {
-  return bytes.map((val) => {
-    return ("00" + val.toString(16)).slice(-2);
-  }).join(" ");
-}
 
 export default class App extends Component<{}> {
   constructor(props) {
@@ -49,30 +37,31 @@ export default class App extends Component<{}> {
     };
   }
 
-  async updateFelicaView(info) {
-    this.setState({
-      idm: bytes2hexString(info.idm),
-      pmm: bytes2hexString(info.pmm),
-      type: "",
-      info: {}
-    });
-    await RNFelica.connect();
-    const anaResult = await RNFelica.analyze();
-    this.setState({
-      type: anaResult.type,
-      history: anaResult.history
-    });
-    await RNFelica.close();
-  }
-
   componentDidMount() {
     if (startupFelicaInfo !== null) {
       RNFelica.off(RNFelica.EVENT.FELICA_DISCOVER, startupFelicaCb);
-      this.updateFelicaView(startupFelicaInfo);
     }
     RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, async (event) => {
-      console.log("FELICA_DISCOVER");
-      await this.updateFelicaView(event);
+      console.log("FELICA_DISCOVER", event);
+      try{
+        await RNFelica.connect();
+        const polling = await RNFelica.polling(0xFFFF, 0x01, 0);
+        console.log("0 polling", polling);
+        const requestService = await RNFelica.requestService(event.idm, [0x000F]);
+        console.log("1 requestService", requestService);
+        const requestResponse = await RNFelica.requestResponse(event.idm);
+        console.log("2 requestResponse", requestResponse);
+        const readWithoutEncryption = await RNFelica.readWithoutEncryption(event.idm, [0x000F], [0, 0], [0, 1]);
+        console.log("3 readWithoutEncryption", readWithoutEncryption);
+        const searchServiceCode = await RNFelica.searchServiceCode(event.idm, 0);
+        console.log("4 searchServiceCode", searchServiceCode);
+        const requestSystemCode = await RNFelica.requestSystemCode(event.idm);
+        console.log("5 requestSystemCode", requestSystemCode);
+
+        await RNFelica.close();
+      }catch(e){
+        console.error("error", e);
+      }
     });
   }
 
@@ -81,46 +70,6 @@ export default class App extends Component<{}> {
   }
 
   render() {
-    let CardView = (<Text style={styles.noneText}>カード情報</Text>);
-    if (this.state.type === "CJRC") {
-      CardView = (
-        <List dataArray={this.state.history}
-              renderRow={(item) => {
-                return (
-                  <ListItem>
-                    <View>
-                      <Text>{item.date.yy}/{item.date.mm}/{item.date.dd}</Text>
-                      <Text>入場駅コード: {item.enterStationCode}</Text>
-                      <Text>退場駅コード: {item.exitStationCode}</Text>
-                      <Text>残高 {item.balance}円</Text>
-                    </View>
-                  </ListItem>
-                );
-              }}
-        >
-        </List>
-      );
-    } else if (this.state.type === "Kururu") {
-      CardView = (
-        <List dataArray={this.state.history}
-              renderRow={(item) => {
-                return (
-                  <ListItem>
-                    <View>
-                      <Text>{item.date.yy}/{item.date.mm}/{item.date.dd}</Text>
-                      <Text>入場駅: {item.enterStationName}</Text>
-                      <Text>降車駅: {item.exitStationName}</Text>
-                      <Text>乗車時刻: {item.enterTime.hour}:{item.enterTime.min}</Text>
-                      <Text>降車時刻: {item.exitTime.hour}:{item.exitTime.min}</Text>
-                      <Text>残高 {item.balance}円</Text>
-                    </View>
-                  </ListItem>
-                );
-              }}
-        >
-        </List>
-      );
-    }
     return (
       <Container style={styles.container}>
         <Header>
@@ -128,18 +77,6 @@ export default class App extends Component<{}> {
           <Title>Felica Reader</Title>
           </Body>
         </Header>
-        <List>
-          <ListItem>
-            <Text>IDM: {this.state.idm}</Text>
-          </ListItem>
-          <ListItem>
-            <Text>PMM: {this.state.pmm}</Text>
-          </ListItem>
-          <ListItem>
-            <Text>カードの種類: {this.state.type}</Text>
-          </ListItem>
-        </List>
-        {CardView}
       </Container>
     );
   }

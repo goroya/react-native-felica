@@ -1,7 +1,4 @@
-import Util from './js/Util';
-import JsRNFelica from './js/JsRNFelica';
-const jsRNFelica = JsRNFelica;
+import jsRNFelica from './dist';
 
-jsRNFelica.util = Util;
 export default jsRNFelica;
 module.exports = jsRNFelica;

@@ -63,66 +63,24 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<h1 id="react-native-felica">react-native-felica</h1>
-				<p><a href="https://nodei.co/npm/react-native-felica/"><img src="https://nodei.co/npm/react-native-felica.png?downloads=true&amp;downloadRank=true&amp;stars=true" alt="NPM"></a></p>
-				<h2 id="getting-started">Getting started</h2>
-				<p><code>$ npm install react-native-felica --save</code></p>
-				<h3 id="mostly-automatic-installation">Mostly automatic installation</h3>
-				<p><code>$ react-native link react-native-felica</code></p>
-				<h2 id="esdoc-docment">ESDoc Docment</h2>
-				<p>ESdoc Document is bellow
-				<a href="https://goroya.github.io/react-native-felica/">https://goroya.github.io/react-native-felica/</a></p>
-				<h1 id="api-docment">API Docment</h1>
-				<h2 id="usage">Usage</h2>
-				<pre><code class="lang-js"><span class="hljs-comment">// Require the module</span>
-<span class="hljs-keyword">import</span> RNFelica <span class="hljs-keyword">from</span> <span class="hljs-string">'react-native-felica'</span>;
-RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, <span class="hljs-keyword">async</span> (event) =&gt; {
-    <span class="hljs-comment">// Check having NFC equipment</span>
-    <span class="hljs-keyword">await</span> RNFelica.haveNfc()
-
-    <span class="hljs-comment">// Check enabling NFC</span>
-    <span class="hljs-keyword">await</span> RNFelica.enableNfc()
-
-    <span class="hljs-comment">// Connecting Felica</span>
-    <span class="hljs-keyword">await</span> RNFelica.connect()
-
-    <span class="hljs-comment">// Disconnect Felica</span>
-    <span class="hljs-keyword">await</span> RNFelica.close()
-
-    <span class="hljs-comment">// </span>
-    <span class="hljs-keyword">await</span> RNFelica.enableForegroundDispatch()
-
-    <span class="hljs-comment">// </span>
-    <span class="hljs-keyword">await</span> RNFelica.disableForegroundDispatch()
-
-    <span class="hljs-comment">// Send Raw data to Felica</span>
-    <span class="hljs-keyword">await</span> RNFelica.transceive(data)
-
-}
-</code></pre>
-				<h2 id="usage">Usage</h2>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> RNFelica <span class="hljs-keyword">from</span> <span class="hljs-string">'react-native-felica'</span>;
-
-RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, <span class="hljs-keyword">async</span> (event) =&gt; {
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Felica Info"</span>, event);
-
-    <span class="hljs-keyword">const</span> pol = <span class="hljs-keyword">await</span> RNFelica.polling();
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"poll:"</span> + RNFelica.util.byteToHexString(pol));
-
-    <span class="hljs-keyword">const</span> read = <span class="hljs-keyword">await</span> RNFelica.readWithoutEncryption(event.idm, [<span class="hljs-number">0x090F</span>], [<span class="hljs-number">0x000000</span>]);
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"read"</span>, RNFelica.util.byteToHexString(read));
-
-    <span class="hljs-keyword">const</span> reqSysCode = <span class="hljs-keyword">await</span> RNFelica.requestSystemCode(event.idm);
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"connect "</span>, reqSysCode);
-});
-</code></pre>
-			</div>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>External modules</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-external-module"><a href="modules/_index_.html" class="tsd-kind-icon">"index"</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
+					<li class="globals current ">
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">

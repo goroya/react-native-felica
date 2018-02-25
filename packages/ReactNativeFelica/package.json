@@ -1,10 +1,12 @@
 {
   "name": "react-native-felica",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Using felica on react-native",
   "main": "index.js",
   "scripts": {
-    "doc": "esdoc"
+    "doc": "typedoc --out ../../docs ts",
+    "build": "tsc",
+    "prepublish": "npm run build && npm run doc"
   },
   "keywords": [
     "react-native",
@@ -18,14 +20,25 @@
   },
   "author": "goroya.io <goroyadevelop@gmail.com> (https://github.com/goroya)",
   "license": "MIT",
+  "files": [
+    "index.js",
+    "package.json",
+    "README.md",
+    "yarn.lock",
+    "dist"
+  ],
   "peerDependencies": {
     "react-native": "^0.41.2"
   },
   "dependencies": {
-    "eventemitter2": "^5.0.1"
+    "eventemitter2": "^5.0.1",
+    "felica-parser": "^0.0.4"
   },
   "devDependencies": {
-    "esdoc": "^1.0.4",
-    "esdoc-standard-plugin": "^1.0.0"
+    "@types/react": "^16.0.38",
+    "@types/react-native": "^0.52.13",
+    "tslint": "^5.9.1",
+    "typedoc": "^0.10.0",
+    "typescript": "^2.7.2"
   }
 }
