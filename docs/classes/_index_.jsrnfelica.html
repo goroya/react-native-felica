@@ -98,8 +98,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.jsrnfelica.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.jsrnfelica.html#close" class="tsd-kind-icon">close</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.jsrnfelica.html#connect" class="tsd-kind-icon">connect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.jsrnfelica.html#disableforegrounddispatch" class="tsd-kind-icon">disable<wbr>Foreground<wbr>Dispatch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.jsrnfelica.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.jsrnfelica.html#emitasync" class="tsd-kind-icon">emit<wbr>Async</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.jsrnfelica.html#enableforegrounddispatch" class="tsd-kind-icon">enable<wbr>Foreground<wbr>Dispatch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.jsrnfelica.html#enablenfc" class="tsd-kind-icon">enable<wbr>Nfc</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.jsrnfelica.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.jsrnfelica.html#havenfc" class="tsd-kind-icon">have<wbr>Nfc</a></li>
@@ -124,6 +126,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.jsrnfelica.html#requestsystemcode" class="tsd-kind-icon">request<wbr>System<wbr>Code</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.jsrnfelica.html#searchservicecode" class="tsd-kind-icon">search<wbr>Service<wbr>Code</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.jsrnfelica.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.jsrnfelica.html#transceive" class="tsd-kind-icon">transceive</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.jsrnfelica.html#transceivestring" class="tsd-kind-icon">transceive<wbr>String</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.jsrnfelica.html#writewithoutencryption" class="tsd-kind-icon">write<wbr>Without<wbr>Encryption</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_index_.jsrnfelica.html#commonsendcmd" class="tsd-kind-icon">common<wbr>Send<wbr>Cmd</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_index_.jsrnfelica.html#parserecvdata" class="tsd-kind-icon">parse<wbr>Recv<wbr>Data</a></li>
@@ -132,7 +136,7 @@
 						<section class="tsd-index-section ">
 							<h3>Object literals</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-static"><a href="_index_.jsrnfelica.html#event" class="tsd-kind-icon">EVENT</a></li>
+								<li class="tsd-kind-object-literal tsd-parent-kind-class"><a href="_index_.jsrnfelica.html#event" class="tsd-kind-icon">EVENT</a></li>
 							</ul>
 						</section>
 					</div>
@@ -151,7 +155,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter2.__constructor</p>
 								<ul>
-									<li>Defined in index.ts:47</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L48">index.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -203,7 +207,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:87</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L88">index.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -225,12 +229,34 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:79</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L80">index.ts:80</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Connect to Felica</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="disableforegrounddispatch" class="tsd-anchor"></a>
+					<h3>disable<wbr>Foreground<wbr>Dispatch</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">disable<wbr>Foreground<wbr>Dispatch<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L104">index.ts:104</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>[Android API] disableForegroundDispatch</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -292,6 +318,28 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="enableforegrounddispatch" class="tsd-anchor"></a>
+					<h3>enable<wbr>Foreground<wbr>Dispatch</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">enable<wbr>Foreground<wbr>Dispatch<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L96">index.ts:96</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>[Android API] enableForegroundDispatch</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="enablenfc" class="tsd-anchor"></a>
 					<h3>enable<wbr>Nfc</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -301,7 +349,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:71</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L72">index.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -341,7 +389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:63</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L64">index.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -558,13 +606,13 @@
 					<a name="polling" class="tsd-anchor"></a>
 					<h3>polling</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">polling<span class="tsd-signature-symbol">(</span>systemCode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, requestCode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, timeSlot<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCPolling</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">polling<span class="tsd-signature-symbol">(</span>systemCode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, requestCode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, timeSlot<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:98</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L133">index.ts:133</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -584,7 +632,7 @@
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> timeSlot: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCPolling</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -700,13 +748,13 @@
 					<a name="readwithoutencryption" class="tsd-anchor"></a>
 					<h3>read<wbr>Without<wbr>Encryption</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Without<wbr>Encryption<span class="tsd-signature-symbol">(</span>idm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, services<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, serviceCodeListOrderList<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, blockNumberList<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCReadWithoutEncryption</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Without<wbr>Encryption<span class="tsd-signature-symbol">(</span>idm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, services<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, serviceCodeListOrderList<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, blockNumberList<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:150</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L185">index.ts:185</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -729,7 +777,7 @@
 									<h5>blockNumberList: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCReadWithoutEncryption</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -788,13 +836,13 @@
 					<a name="requestresponse" class="tsd-anchor"></a>
 					<h3>request<wbr>Response</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">request<wbr>Response<span class="tsd-signature-symbol">(</span>idm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCRequestResponce</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">request<wbr>Response<span class="tsd-signature-symbol">(</span>idm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:131</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L166">index.ts:166</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -808,7 +856,7 @@
 									<h5>idm: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCRequestResponce</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -816,13 +864,13 @@
 					<a name="requestservice" class="tsd-anchor"></a>
 					<h3>request<wbr>Service</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">request<wbr>Service<span class="tsd-signature-symbol">(</span>idm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCPolling</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">request<wbr>Service<span class="tsd-signature-symbol">(</span>idm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:115</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L150">index.ts:150</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -839,7 +887,7 @@
 									<h5>nodes: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCPolling</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -847,13 +895,13 @@
 					<a name="requestsystemcode" class="tsd-anchor"></a>
 					<h3>request<wbr>System<wbr>Code</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">request<wbr>System<wbr>Code<span class="tsd-signature-symbol">(</span>idm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCRequestSystemCode</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">request<wbr>System<wbr>Code<span class="tsd-signature-symbol">(</span>idm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:208</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L243">index.ts:243</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -867,7 +915,7 @@
 									<h5>idm: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCRequestSystemCode</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -875,13 +923,13 @@
 					<a name="searchservicecode" class="tsd-anchor"></a>
 					<h3>search<wbr>Service<wbr>Code</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">search<wbr>Service<wbr>Code<span class="tsd-signature-symbol">(</span>idm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, idx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCSearchServiceCode</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">search<wbr>Service<wbr>Code<span class="tsd-signature-symbol">(</span>idm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, idx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:192</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L227">index.ts:227</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -898,7 +946,7 @@
 									<h5>idx: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCSearchServiceCode</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -927,16 +975,72 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="writewithoutencryption" class="tsd-anchor"></a>
-					<h3>write<wbr>Without<wbr>Encryption</h3>
+					<a name="transceive" class="tsd-anchor"></a>
+					<h3>transceive</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">write<wbr>Without<wbr>Encryption<span class="tsd-signature-symbol">(</span>idm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, services<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, serviceCodeListOrderList<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, blockNumberList<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, blockData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCWriteWithoutEncryption</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">transceive<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:172</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L113">index.ts:113</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>[Android API] transceive</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="transceivestring" class="tsd-anchor"></a>
+					<h3>transceive<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">transceive<wbr>String<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L122">index.ts:122</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>[Android API] transceive(string data version)</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="writewithoutencryption" class="tsd-anchor"></a>
+					<h3>write<wbr>Without<wbr>Encryption</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">write<wbr>Without<wbr>Encryption<span class="tsd-signature-symbol">(</span>idm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, services<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, serviceCodeListOrderList<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, blockNumberList<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, blockData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L207">index.ts:207</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -962,7 +1066,7 @@
 									<h5>blockData: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRCWriteWithoutEncryption</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -976,7 +1080,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:32</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L25">index.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -998,13 +1102,13 @@
 					<a name="parserecvdata" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Recv<wbr>Data</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Recv<wbr>Data<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Recv<wbr>Data<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IRCPolling</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IRCRequestService</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IRCRequestResponce</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IRCReadWithoutEncryption</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IRCWriteWithoutEncryption</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IRCSearchServiceCode</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IRCRequestSystemCode</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:45</li>
+									<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L38">index.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1018,22 +1122,35 @@
 									<h5>data: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IRCPolling</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">IRCRequestService</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">IRCRequestResponce</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">IRCReadWithoutEncryption</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">IRCWriteWithoutEncryption</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">IRCSearchServiceCode</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">IRCRequestSystemCode</span>
+							</h4>
 							<p>{IRCPolling | IRCRequestService | IRCRequestResponce | IRCReadWithoutEncryption |
-							IRCWriteWithoutEncryption | IRCSearchServiceCode |IRCRequestSystemCode}</p>
+							IRCWriteWithoutEncryption| IRCSearchServiceCode | IRCRequestSystemCode}</p>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class">
 					<a name="event" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> EVENT</h3>
+					<h3>EVENT</h3>
 					<div class="tsd-signature tsd-kind-icon">EVENT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:23</li>
+							<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L46">index.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1052,7 +1169,7 @@
 						<div class="tsd-signature tsd-kind-icon">FELICA_<wbr>DISCOVER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;RNFelica.EVENT.FELICA_DISCOVER</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in index.ts:24</li>
+								<li>Defined in <a href="https://github.com/goroya/react-native-felica/blob/43cc343/packages/ReactNativeFelica/ts/index.ts#L47">index.ts:47</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1089,11 +1206,17 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_index_.jsrnfelica.html#connect" class="tsd-kind-icon">connect</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.jsrnfelica.html#disableforegrounddispatch" class="tsd-kind-icon">disable<wbr>Foreground<wbr>Dispatch</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_index_.jsrnfelica.html#emit" class="tsd-kind-icon">emit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_index_.jsrnfelica.html#emitasync" class="tsd-kind-icon">emit<wbr>Async</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.jsrnfelica.html#enableforegrounddispatch" class="tsd-kind-icon">enable<wbr>Foreground<wbr>Dispatch</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_index_.jsrnfelica.html#enablenfc" class="tsd-kind-icon">enable<wbr>Nfc</a>
@@ -1168,6 +1291,12 @@
 								<a href="_index_.jsrnfelica.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.jsrnfelica.html#transceive" class="tsd-kind-icon">transceive</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.jsrnfelica.html#transceivestring" class="tsd-kind-icon">transceive<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_index_.jsrnfelica.html#writewithoutencryption" class="tsd-kind-icon">write<wbr>Without<wbr>Encryption</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
@@ -1176,7 +1305,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
 								<a href="_index_.jsrnfelica.html#parserecvdata" class="tsd-kind-icon">parse<wbr>Recv<wbr>Data</a>
 							</li>
-							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class">
 								<a href="_index_.jsrnfelica.html#event" class="tsd-kind-icon">EVENT</a>
 							</li>
 						</ul>

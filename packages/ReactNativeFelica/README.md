@@ -19,45 +19,43 @@ https://goroya.github.io/react-native-felica/
 ```js
 // Require the module
 import RNFelica from 'react-native-felica';
-RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, async (event) => {
-    // Check having NFC equipment
-    await RNFelica.haveNfc()
-
-    // Check enabling NFC
-    await RNFelica.enableNfc()
-
-    // Connecting Felica
-    await RNFelica.connect()
-
-    // Disconnect Felica
-    await RNFelica.close()
-
-    // 
-    await RNFelica.enableForegroundDispatch()
-
-    // 
-    await RNFelica.disableForegroundDispatch()
-
-    // Send Raw data to Felica
-    await RNFelica.transceive(data)
-
-}
-```
-
-## Usage
-```javascript
-import RNFelica from 'react-native-felica';
+import RNAndroidLifeCycle from 'react-native-android-lifecycle';
 
 RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, async (event) => {
-    console.log("Felica Info", event);
+  console.log("FELICA_DISCOVER", event);
+  try{
+    await RNFelica.connect();
 
-    const pol = await RNFelica.polling();
-    console.log("poll:" + RNFelica.util.byteToHexString(pol));
+    const polling = await RNFelica.polling(0xFFFF, 0x01, 0);
+    console.log("0 polling", polling);
+    const requestService = await RNFelica.requestService(event.idm, [0x000F]);
+    console.log("1 requestService", requestService);
+    const requestResponse = await RNFelica.requestResponse(event.idm);
+    console.log("2 requestResponse", requestResponse);
+    const readWithoutEncryption = await RNFelica.readWithoutEncryption(event.idm, [0x000F], [0, 0], [0, 1]);
+    console.log("3 readWithoutEncryption", readWithoutEncryption);
+    const searchServiceCode = await RNFelica.searchServiceCode(event.idm, 0);
+    console.log("4 searchServiceCode", searchServiceCode);
+    const requestSystemCode = await RNFelica.requestSystemCode(event.idm);
+    console.log("5 requestSystemCode", requestSystemCode);
 
-    const read = await RNFelica.readWithoutEncryption(event.idm, [0x090F], [0x000000]);
-    console.log("read", RNFelica.util.byteToHexString(read));
+    await RNFelica.close();
+  }catch(e){
+    console.error("error", e);
+  }
+});
 
-    const reqSysCode = await RNFelica.requestSystemCode(event.idm);
-    console.log("connect ", reqSysCode);
+RNAndroidLifeCycle.on(RNAndroidLifeCycle.EVENT.ON_HOST_RESUME, async () => {
+  console.log("EVENT ANDROID_ON_HOST_RESUME");
+  await RNFelica.enableForegroundDispatch().catch(err => {
+    console.info(err);
+  })
+});
+RNAndroidLifeCycle.on(RNAndroidLifeCycle.EVENT.ON_HOST_PAUSE, async () => {
+  console.log("EVENT ANDROID_ON_HOST_PAUSE");
+  await RNFelica.disableForegroundDispatch().catch(err => {
+    console.info(err);
+  })
 });
 ```
+

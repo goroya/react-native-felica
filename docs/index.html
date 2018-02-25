@@ -77,44 +77,43 @@
 				<h2 id="usage">Usage</h2>
 				<pre><code class="lang-js"><span class="hljs-comment">// Require the module</span>
 <span class="hljs-keyword">import</span> RNFelica <span class="hljs-keyword">from</span> <span class="hljs-string">'react-native-felica'</span>;
-RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, <span class="hljs-keyword">async</span> (event) =&gt; {
-    <span class="hljs-comment">// Check having NFC equipment</span>
-    <span class="hljs-keyword">await</span> RNFelica.haveNfc()
-
-    <span class="hljs-comment">// Check enabling NFC</span>
-    <span class="hljs-keyword">await</span> RNFelica.enableNfc()
-
-    <span class="hljs-comment">// Connecting Felica</span>
-    <span class="hljs-keyword">await</span> RNFelica.connect()
-
-    <span class="hljs-comment">// Disconnect Felica</span>
-    <span class="hljs-keyword">await</span> RNFelica.close()
-
-    <span class="hljs-comment">// </span>
-    <span class="hljs-keyword">await</span> RNFelica.enableForegroundDispatch()
-
-    <span class="hljs-comment">// </span>
-    <span class="hljs-keyword">await</span> RNFelica.disableForegroundDispatch()
-
-    <span class="hljs-comment">// Send Raw data to Felica</span>
-    <span class="hljs-keyword">await</span> RNFelica.transceive(data)
-
-}
-</code></pre>
-				<h2 id="usage">Usage</h2>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> RNFelica <span class="hljs-keyword">from</span> <span class="hljs-string">'react-native-felica'</span>;
+<span class="hljs-keyword">import</span> RNAndroidLifeCycle <span class="hljs-keyword">from</span> <span class="hljs-string">'react-native-android-lifecycle'</span>;
 
 RNFelica.on(RNFelica.EVENT.FELICA_DISCOVER, <span class="hljs-keyword">async</span> (event) =&gt; {
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Felica Info"</span>, event);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"FELICA_DISCOVER"</span>, event);
+  <span class="hljs-keyword">try</span>{
+    <span class="hljs-keyword">await</span> RNFelica.connect();
 
-    <span class="hljs-keyword">const</span> pol = <span class="hljs-keyword">await</span> RNFelica.polling();
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"poll:"</span> + RNFelica.util.byteToHexString(pol));
+    <span class="hljs-keyword">const</span> polling = <span class="hljs-keyword">await</span> RNFelica.polling(<span class="hljs-number">0xFFFF</span>, <span class="hljs-number">0x01</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"0 polling"</span>, polling);
+    <span class="hljs-keyword">const</span> requestService = <span class="hljs-keyword">await</span> RNFelica.requestService(event.idm, [<span class="hljs-number">0x000F</span>]);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"1 requestService"</span>, requestService);
+    <span class="hljs-keyword">const</span> requestResponse = <span class="hljs-keyword">await</span> RNFelica.requestResponse(event.idm);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"2 requestResponse"</span>, requestResponse);
+    <span class="hljs-keyword">const</span> readWithoutEncryption = <span class="hljs-keyword">await</span> RNFelica.readWithoutEncryption(event.idm, [<span class="hljs-number">0x000F</span>], [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>], [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>]);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"3 readWithoutEncryption"</span>, readWithoutEncryption);
+    <span class="hljs-keyword">const</span> searchServiceCode = <span class="hljs-keyword">await</span> RNFelica.searchServiceCode(event.idm, <span class="hljs-number">0</span>);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"4 searchServiceCode"</span>, searchServiceCode);
+    <span class="hljs-keyword">const</span> requestSystemCode = <span class="hljs-keyword">await</span> RNFelica.requestSystemCode(event.idm);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"5 requestSystemCode"</span>, requestSystemCode);
 
-    <span class="hljs-keyword">const</span> read = <span class="hljs-keyword">await</span> RNFelica.readWithoutEncryption(event.idm, [<span class="hljs-number">0x090F</span>], [<span class="hljs-number">0x000000</span>]);
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"read"</span>, RNFelica.util.byteToHexString(read));
+    <span class="hljs-keyword">await</span> RNFelica.close();
+  }<span class="hljs-keyword">catch</span>(e){
+    <span class="hljs-built_in">console</span>.error(<span class="hljs-string">"error"</span>, e);
+  }
+});
 
-    <span class="hljs-keyword">const</span> reqSysCode = <span class="hljs-keyword">await</span> RNFelica.requestSystemCode(event.idm);
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"connect "</span>, reqSysCode);
+RNAndroidLifeCycle.on(RNAndroidLifeCycle.EVENT.ON_HOST_RESUME, <span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"EVENT ANDROID_ON_HOST_RESUME"</span>);
+  <span class="hljs-keyword">await</span> RNFelica.enableForegroundDispatch().catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> {
+    <span class="hljs-built_in">console</span>.info(err);
+  })
+});
+RNAndroidLifeCycle.on(RNAndroidLifeCycle.EVENT.ON_HOST_PAUSE, <span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"EVENT ANDROID_ON_HOST_PAUSE"</span>);
+  <span class="hljs-keyword">await</span> RNFelica.disableForegroundDispatch().catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> {
+    <span class="hljs-built_in">console</span>.info(err);
+  })
 });
 </code></pre>
 			</div>
