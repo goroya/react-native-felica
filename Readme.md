@@ -17,4 +17,5 @@
 ## TypeDoc
 https://goroya.github.io/react-native-felica/
 
-
+## Example
+https://github.com/goroya/react-native-felica-example/tree/master
