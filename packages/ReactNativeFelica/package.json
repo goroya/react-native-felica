@@ -26,7 +26,10 @@
     "package.json",
     "README.md",
     "yarn.lock",
-    "dist"
+    "dist",
+    "android",
+    "ios",
+    "windows"
   ],
   "peerDependencies": {
     "react-native": "^0.41.2"
