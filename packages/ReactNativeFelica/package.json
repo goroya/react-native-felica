@@ -1,6 +1,6 @@
 {
   "name": "react-native-felica",
-  "version": "0.2.7",
+  "version": "0.3.0",
   "description": "Using felica on react-native",
   "main": "index.js",
   "scripts": {
