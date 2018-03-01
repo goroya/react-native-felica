@@ -1,11 +1,11 @@
-package com.reactlibrary.felicalib
+package com.felica.reactnative.goroya.felicalib
 
 import android.nfc.Tag
 import android.nfc.tech.NfcF
 import com.reactlibrary.felicalib.command.BlockElement
 import com.reactlibrary.felicalib.command.CmdPolling
 import com.reactlibrary.felicalib.command.CmdReadWithoutEncryption
-import com.reactlibrary.felicalib.util.Util
+import com.felica.reactnative.goroya.felicalib.util.Util
 import java.io.IOException
 
 
@@ -82,27 +82,6 @@ class FelicaLib(private val tag: Tag) {
       throw e
     }
   }
-  fun readWithoutEncryption(
-      idm: ByteArray,
-      serviceCodeList:  ArrayList<Int>,
-      blockList: ArrayList<BlockElement>): ByteArray {
-    val byteCmd = CmdReadWithoutEncryption(
-        idm = idm,
-        serviceCodeList = serviceCodeList,
-        blockList = blockList)
-    return this.transceive(byteCmd.data)
-  }
-  fun polling(
-      systemCode: Int,
-      requestCode: CmdPolling.Companion.RequestCode,
-      timeSlot: Int): ByteArray{
-    val byteCmd = CmdPolling(
-        systemCode = systemCode,
-        requestCode = requestCode,
-        timeSlot = timeSlot)
-    return this.transceive(byteCmd.data)
-  }
-
 
   override fun toString(): String {
     var output = "IDM: ${this.idmString}\n"

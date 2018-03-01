@@ -1,4 +1,4 @@
-package com.reactlibrary
+package com.felica.reactnative.goroya
 
 import android.app.Activity
 import android.content.Intent
@@ -8,8 +8,8 @@ import android.util.Log
 import com.facebook.react.bridge.*
 import com.facebook.react.modules.core.DeviceEventManagerModule
 import com.facebook.react.bridge.WritableMap
-import com.reactlibrary.felicalib.FelicaLib
-import com.reactlibrary.felicalib.util.Util
+import com.felica.reactnative.goroya.felicalib.FelicaLib
+import com.felica.reactnative.goroya.felicalib.util.Util
 import java.io.ByteArrayOutputStream
 import java.io.IOException
 import android.app.PendingIntent

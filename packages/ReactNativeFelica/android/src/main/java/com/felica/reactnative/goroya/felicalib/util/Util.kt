@@ -1,7 +1,4 @@
-package com.reactlibrary.felicalib.util
-
-import android.util.Log
-
+package com.felica.reactnative.goroya.felicalib.util
 
 class Util {
   companion object {
