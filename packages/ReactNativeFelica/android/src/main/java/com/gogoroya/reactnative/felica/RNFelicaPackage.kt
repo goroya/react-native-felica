@@ -1,4 +1,4 @@
-package com.felica.reactnative.goroya
+package com.gogoroya.reactnative.felica
 
 import java.util.Arrays
 

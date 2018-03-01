@@ -1,11 +1,8 @@
-package com.felica.reactnative.goroya.felicalib
+package com.gogoroya.reactnative.felica.felicalib
 
 import android.nfc.Tag
 import android.nfc.tech.NfcF
-import com.reactlibrary.felicalib.command.BlockElement
-import com.reactlibrary.felicalib.command.CmdPolling
-import com.reactlibrary.felicalib.command.CmdReadWithoutEncryption
-import com.felica.reactnative.goroya.felicalib.util.Util
+import com.gogoroya.reactnative.felica.felicalib.util.Util
 import java.io.IOException
 
 

@@ -1,4 +1,4 @@
-package com.felica.reactnative.goroya
+package com.gogoroya.reactnative.felica
 
 import android.app.Activity
 import android.content.Intent
@@ -8,13 +8,13 @@ import android.util.Log
 import com.facebook.react.bridge.*
 import com.facebook.react.modules.core.DeviceEventManagerModule
 import com.facebook.react.bridge.WritableMap
-import com.felica.reactnative.goroya.felicalib.FelicaLib
-import com.felica.reactnative.goroya.felicalib.util.Util
+import com.gogoroya.reactnative.felica.felicalib.FelicaLib
+import com.gogoroya.reactnative.felica.felicalib.util.Util
 import java.io.ByteArrayOutputStream
 import java.io.IOException
 import android.app.PendingIntent
 import android.content.IntentFilter
-import com.felica.reactnative.gogoroya.R
+import com.gogoroya.reactnative.felica.R
 
 class RNFelicaModule(private val reactContext: ReactApplicationContext)
   : ReactContextBaseJavaModule(reactContext), LifecycleEventListener, ActivityEventListener {

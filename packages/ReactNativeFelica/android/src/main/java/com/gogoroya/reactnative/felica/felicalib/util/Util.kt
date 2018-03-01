@@ -1,4 +1,4 @@
-package com.felica.reactnative.goroya.felicalib.util
+package com.gogoroya.reactnative.felica.felicalib.util
 
 class Util {
   companion object {

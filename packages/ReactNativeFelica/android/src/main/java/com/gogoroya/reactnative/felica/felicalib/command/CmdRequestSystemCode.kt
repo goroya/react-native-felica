@@ -1,4 +1,4 @@
-package com.reactlibrary.felicalib.command
+package com.gogoroya.reactnative.felica.felicalib.command
 
 import java.io.ByteArrayOutputStream
 

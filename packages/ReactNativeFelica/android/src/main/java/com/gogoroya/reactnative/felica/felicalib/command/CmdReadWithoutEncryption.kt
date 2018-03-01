@@ -1,14 +1,15 @@
-package com.reactlibrary.felicalib.command
+package com.gogoroya.reactnative.felica.felicalib.command
+
 
 import java.io.ByteArrayOutputStream
 
 
-class CmdWriteWithoutEncryption(
+class CmdReadWithoutEncryption(
     private val idm:ByteArray,
-    private val serviceCodeList: List<Int>,
-    private val blockList: List<BlockElement>) : CmdBase() {
+    private val serviceCodeList: ArrayList<Int>,
+    private val blockList: ArrayList<BlockElement>) : CmdBase() {
   companion object {
-    const val COMMAND_CODE = 0x08
+    const val COMMAND_CODE = 0x06
   }
   override val data: ByteArray
     get() {
